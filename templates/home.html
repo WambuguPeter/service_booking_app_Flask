@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+    <h1>Welcome to SmartFix</h1>
+    <p>Your trusted partner for electronic device repairs.</p>
+</section>
+<!-- <section class="services">
+    <h2>Our Services</h2>
+    <ul class="service-list">
+        {% for service in services %}
+        <li>{{ service }}</li>
+        {% endfor %}
+    </ul>
+</section> -->
+
+<section class="services">
+  <h2>Our Services</h2>
+  <div class="service-cards">
+    <div class="service-card">
+      <img src="{{ url_for('static', filename='images/phone_repair.jpeg') }}" alt="Phone Repair">
+      <button>Phone Repair</button>
+    </div>
+    <div class="service-card">
+      <img src="{{ url_for('static', filename='images/laptop_repair.jpeg') }}" alt="Laptop Repair">
+      <button>Laptop Repair</button>
+    </div>
+    <div class="service-card">
+      <img src="{{ url_for('static', filename='images/tv_repair.jpeg') }}" alt="TV Repair">
+      <button>TV Repair</button>
+    </div>
+  </div>
+</section>
+{% endblock %}
