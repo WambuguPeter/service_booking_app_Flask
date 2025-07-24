@@ -9,17 +9,6 @@ load_dotenv()
 app = Flask(__name__)
 app.secret_key = "supersecretkey"
 
-# EMAIL_USER = os.getenv("EMAIL_USER")
-# EMAIL_PASS = os.getenv("EMAIL_PASS")
-# EMAIL_RECEIVER = os.getenv("EMAIL_RECEIVER")
-
-# app.config['MAIL_SERVER'] = os.environ.get('MAIL_SERVER')
-# app.config['MAIL_PORT'] = int(os.environ.get('MAIL_PORT'))
-# app.config['MAIL_USERNAME'] = os.environ.get('MAIL_USERNAME')
-# app.config['MAIL_RECEIVER'] = os.environ.get('MAIL_RECEIVER')
-# app.config['MAIL_PASSWORD'] = os.environ.get('MAIL_PASSWORD')
-# app.config['MAIL_USE_TLS'] = os.environ.get('MAIL_USE_TLS') == 'True'
-# app.config['MAIL_USE_SSL'] = os.environ.get('MAIL_USE_SSL') == 'True'
 
 MAIL_SERVER = os.environ.get('MAIL_SERVER')
 MAIL_PORT = int(os.environ.get('MAIL_PORT'))
