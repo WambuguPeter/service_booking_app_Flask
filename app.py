@@ -7,6 +7,7 @@ from email.mime.text import MIMEText
 load_dotenv()
 
 app = Flask(__name__)
+application = app
 app.secret_key = "supersecretkey"
 
 
